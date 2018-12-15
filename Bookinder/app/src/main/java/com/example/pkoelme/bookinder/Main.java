@@ -11,7 +11,8 @@ import android.widget.*;
 
 
 public class Main extends AppCompatActivity {
-    String zamknieto = "Zamknieto";
+
+
     Button exit;
     Context context;
 
@@ -23,12 +24,12 @@ public class Main extends AppCompatActivity {
         exit = (Button) findViewById(R.id.regiesterButton);
 
         exit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                @Override
+                public void onClick(View v) {
 
-                Intent intent = new Intent(context, Regiestration.class);
-                startActivity(intent);
-            }
+                    Intent intent = new Intent(context, Regiestration.class);
+                    startActivity(intent);
+                }
         });
     }
 }
